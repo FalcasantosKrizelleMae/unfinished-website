@@ -1,0 +1,142 @@
+<html>
+    <head>
+    <title>Registration</title>
+        <link rel="icon" href="images/wmsulogo.png" type="image/png" sizes="16x16">
+        <link rel="stylesheet" href="styles/registration-style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script> 
+            function resetForm(){
+                var reset = confirm("Are you sure you want to reset?");
+                    if (reset == true) 
+                        form.reset();
+                    else
+                        event.preventDefault();
+            }
+                
+        </script>
+    </head>
+    
+        <body>
+            
+            <form>
+                <fieldset>
+                  
+                  
+                       <input type="image" src="images/wmsulogo.png" name="homeBtn" alt = "Home" url = "wmsu.edu.ph" /> 
+                       <h>WMSU Registration Form<br>
+                            <pre class="text">SY. 2020-2021</pre>
+                        </h>
+                        
+                    
+                 <br>
+                 <br>
+                 <br>
+            
+                    <p>Student Information</p>
+                    <hr><br><br>
+
+                    <label>Name </label><br><br>
+                    
+                    <input type = "text" class = "fname" required autofocus style = "width: 45%;" required>
+                    <input type = "text" class = "lname" required style = "width: 45%;" required>
+                    
+                    <pre> First Name                                                                    Last Name</pre>
+                    <br>
+                   
+                    
+                    <label>Birth Date</label><br><br>
+                    <input type  = "date" name = "birthDate" style ="width:45%;" required>
+                    <br>
+                    <br>
+                    <br>
+                 
+                    
+                    <label style= "word-spacing: 250px;">Gender Age</label><br><br>
+                    <input type = "radio" name = "gender" checked> Female           
+                    <input type = "radio" name = "gender" style ="margin-left: 40px;"> Male
+                    <input type = "number" name = "age" placeholder="0" min="15" max="50">
+                    <br>
+                    <br>
+                  
+                    
+                    <label>Address</label><br><br>
+                    
+                    <input type = "text" class = "city" style = "width: 45%;" required>
+                    <input type = "text" class = "province" style = "width: 45%;" required>
+                    <pre>Street/Barangay                                                            City</pre>
+                     <br>
+
+                
+                    <label style= "word-spacing: 215px;">Mobile</label><br><br>
+                    <input type="tel" name="contactNUmber" placeholder="09XX-XXX-XXXX" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}" maxlength = "13" style = "width: 100%;"  required>
+                    <br>
+                    <br>
+                
+                
+                    <label>Deparment</label><br><br>
+                    <select name = "College" required style="width: 100%;" >
+                        <option value>Select College</option>
+                        <option value="Agriculture">College of Agriculture</option>
+                        <option value="Architecture">College of Architecture</option>
+                        <option value="Asian">College of Asian and Islamic Studies</option>
+                        <option value="CCJE">College of Criminal Justice Education</option>
+                        <option value="Law">College of Law</option>
+                        <option value="CLA">College of Liberal Arts</option>
+                        <option value="Nursing">College of Nursing</option>
+                        <option value="Education">College of Physical Education</option>
+                        <option value="CSM">College of Science and Mathematics</option>
+                        <option value="CTE">College of Teacher Education</option>
+                        <option value="ICS">Institure of Computer Studies</option>
+                    </select>
+                    
+                    <br>
+                    <br>
+                    
+                    <label style = "margin-right: 230px; ">Course</label><label>Year / Section</label><br><br>
+                      <input list="course" name="course" class="course" style="width: 43.5%;" required> 
+                      <datalist id="browsers">
+                        <option value="Information Technology">
+                        <option value="Computer Science">
+                        <option value="Information Systems">
+                      </datalist>
+                    
+                    <select name = "College" required style="width: 50%;">
+                        <option value>Please select</option>
+                        <option value>1A</option>
+                        <option value>1B</option>
+                        <option value>2A</option>
+                        <option value>2B</option>
+                        <option value>3A</option>
+                        <option value>3B</option>
+                        <option value>Fourth Year</option>
+                        
+                    </select>
+                    <br>
+                    <br>
+                    <label>Email</label><br><br>
+                    <input type = "email" name = "emailAddress" placeholder = "example@wmsu.edu.ph" style = "width:100%" required>
+                    <br>
+                    <br>
+                  
+                    
+
+                    <label>Password</label><br><br>
+                    <input type = "password" name = "pass" minlength = "6" placeholder = "Enter Password" style = "width:100%" required>
+                   
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                   
+                    <div class = "btn">
+                            <input type="reset" onclick="resetForm()" value = "Reset">
+                        <button type="submit">Submit</button>
+                    </div>
+                     
+              
+                </fieldset>
+                
+            </form>
+        </body>
+</html> 
+
